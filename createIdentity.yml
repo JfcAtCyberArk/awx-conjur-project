@@ -2,8 +2,8 @@
   roles:
     - role: cyberark.conjur-host-identity
       conjur_appliance_url: 'https://conjur-master'
-      conjur_account: 'cyberark'
-      conjur_host_factory_token: ""
+      conjur_account: 'conjurpoc'
+      conjur_host_factory_token: "{{ lookup('env','CONJUR_HFTOKEN') }}"
       conjur_host_name: "{{inventory_hostname}}"
       conjur_validate_certs: true
-      conjur_ssl_certificate: "{{ lookup('file','conjur-cyberark.pem') }}"
+      conjur_cert_file: "/etc/conjur-conjur.pem"

@@ -1,5 +1,7 @@
 - hosts: newMachines
   tasks:
+    - name : install Sinatra gem
+      shell: "gem install sinatra"
     - name: Start application with secrets from Conjur
       shell: "summon --provider summon-conjur ruby test_app.rb"
       args:

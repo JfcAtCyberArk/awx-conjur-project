@@ -1,7 +1,7 @@
 - hosts: newMachines
   tasks:
     - name: Start application with secrets from Conjur
-      shell: "summon --provider summon-conjur ruby test_app.rb"
+      shell: "ruby test_app.rb"
       args:
         chdir: /usr/src
       environment:

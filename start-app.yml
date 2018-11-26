@@ -6,3 +6,5 @@
         chdir: /usr/src
       environment:
         CONJUR_MAJOR_VERSION: 4
+      sudo: true
+      sudo_user: root

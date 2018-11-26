@@ -1,0 +1,7 @@
+- hosts: newMachines
+  tasks:
+    - name: Start application with secrets from Conjur
+      summon_conjur:
+        variables:
+          DB_PASSWORD: "ansible-test-app/test-app-dbpassword"
+        command: ruby test_app.rb

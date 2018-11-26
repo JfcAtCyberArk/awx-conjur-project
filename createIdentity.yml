@@ -2,7 +2,7 @@
   vars:
     cert: "{{lookup('env', 'CONJUR_CERT_FILE')}}"
   roles:
-    - role: cyberark.conjur
+    - role: cyberark.conjur-host-identity
       conjur_appliance_url: "{{ lookup('env','CONJUR_APPLIANCE_URL') }}"
       conjur_account: "{{ lookup('env','CONJUR_ACCOUNT') }}"
       conjur_host_factory_token: "{{ lookup('env','CONJUR_HFTOKEN') }}"

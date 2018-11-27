@@ -3,9 +3,8 @@
     - name : install Sinatra gem
       shell: "gem install sinatra"
     - name: Start application with secrets from Conjur
-      shell: "start-stop-daemon --start --quiet --pidfile /var/run/test --exec summon ruby test_app.rb"
+      shell: "summon ruby test_app.rb"
       args:
-        executable: "/bin/bash"
         chdir: /usr/src
       environment:
         CONJUR_MAJOR_VERSION: 4

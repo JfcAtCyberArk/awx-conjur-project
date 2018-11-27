@@ -1,2 +1,2 @@
 ---
-SSH_PORT: 22
+ansible_port: 22

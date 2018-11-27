@@ -3,7 +3,7 @@
     - name : install Sinatra gem
       shell: "gem install sinatra"
     - name: Start application with secrets from Conjur
-      shell: "summon ruby test_app.rb"
+      shell: "( ( nohup summon ruby test_app.rb 1>/dev/null 2>&1 ) & )"
       args:
         chdir: /usr/src
       environment:

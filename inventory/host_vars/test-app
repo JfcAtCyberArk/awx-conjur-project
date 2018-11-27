@@ -1,2 +1,2 @@
 ---
-ansible_password: Cyberark1
+ansible_password: {{ lookup('retrieve_conjur_variable', 'ansible/ssh-password') }}

@@ -1,2 +1,2 @@
 ---
-ansible_password: "{{ lookup('retrieve_conjur_variable', 'ansible/ssh-password') }}"
+ansible_password: "{{ lookup('retrieve_conjur_variable', 'devops-alpha/dev/first-app/ssh-password') }}"

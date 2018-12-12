@@ -7,4 +7,4 @@
       args:
         chdir: /usr/src
       environment:
-        CONJUR_MAJOR_VERSION: 4
+        CONJUR_MAJOR_VERSION: 5

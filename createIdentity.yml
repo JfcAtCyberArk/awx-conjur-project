@@ -1,3 +1,4 @@
+---
 - hosts: newMachines
   vars:
     cert: "{{lookup('env', 'CONJUR_CERT_FILE')}}"

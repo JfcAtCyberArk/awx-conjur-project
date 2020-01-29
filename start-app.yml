@@ -1,3 +1,4 @@
+---
 - hosts: newMachines
   tasks:
     - name : install Sinatra gem
